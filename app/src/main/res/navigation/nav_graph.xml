@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cuisineFragment">
+
+    <fragment
+        android:id="@+id/cuisineFragment"
+        android:name="raghav.sharma.mealsapp.CuisineFragment"
+        android:label="fragment_cuisine"
+        tools:layout="@layout/fragment_cuisine">
+
+        <action
+            android:id="@+id/action_cuisineFragment_to_recipesFragment"
+            app:destination="@id/recipesFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipesFragment"
+        android:name="raghav.sharma.mealsapp.RecipesFragment"
+        android:label="fragment_recipes"
+        tools:layout="@layout/fragment_recipes">
+
+        <argument
+            android:name="@string/arg_cuisineId"
+            app:nullable="false" />
+
+        <action
+            android:id="@+id/action_recipesFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="raghav.sharma.mealsapp.RecipeDetailFragment"
+        android:label="fragment_recipe_detail"
+        tools:layout="@layout/fragment_recipe_detail">
+
+        <argument
+            android:name="@string/arg_dishId"
+            app:nullable="false" />
+    </fragment>
+
+</navigation>

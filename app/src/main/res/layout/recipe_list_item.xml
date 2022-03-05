@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipeCard"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginVertical="10dp"
+    android:background="@drawable/rounded_corners"
+    android:textAlignment="center"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:id="@+id/recipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="170dp">
+
+            <ImageView
+                android:id="@+id/recipe_image"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/recipe_image"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/recipe_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/recipe_title_background"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:text="something" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/gray"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/recipe_duration"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center|center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:text="dur" />
+
+            <TextView
+                android:id="@+id/recipe_affordability"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center|center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:text="aff" />
+
+            <TextView
+                android:id="@+id/recipe_complexity"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center|center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:text="comp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fallback_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/accent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationZ="10dp"
+        android:visibility="invisible" />
+</androidx.cardview.widget.CardView>

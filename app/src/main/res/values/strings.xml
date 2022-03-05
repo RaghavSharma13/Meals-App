@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Meals App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="minuteSymbol">%1$d m</string>
+    <string name="recipe_image">recipe_image</string>
+    <string name="arg_cuisineId">cuisineId</string>
+    <string name="arg_dishId">dishId</string>
+    <string name="ingredients_title">Ingredients</string>
+    <string name="steps_title">Steps</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="homeTab_title">Home</string>
+    <string name="favoritesTab_title">Favorites</string>
+    <string name="add_favorite">Add Favorite</string>
+    <string name="filter">Filter</string>
+    <string name="save">Save</string>
+    <string name="saved">Saved</string>
+    <string name="gluten_free">Gluten Free</string>
+    <string name="lactose_free">Lactose Free</string>
+    <string name="vegan">Vegan</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="filters_screen_title">Filters/Restrictions</string>
+    <string name="favorites_fallback_text">You have 0 recipes marked Favorite. Start adding some.</string>
+    <string name="recipes_fallback_text">No recipes available for given filter.</string>
+</resources>

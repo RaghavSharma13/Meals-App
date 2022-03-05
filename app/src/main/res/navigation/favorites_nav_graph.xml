@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/favorites_nav_graph"
+    app:startDestination="@id/recipesFragment2">
+
+    <fragment
+        android:id="@+id/recipesFragment2"
+        android:name="raghav.sharma.mealsapp.FavoriteRecipesFragment"
+        android:label="fragment_recipes"
+        tools:layout="@layout/fragment_recipes" >
+        <action
+            android:id="@+id/action_favoriteRecipes_to_recipeDetailFragment2"
+            app:destination="@id/recipeDetailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeDetailFragment2"
+        android:name="raghav.sharma.mealsapp.RecipeDetailFragment"
+        android:label="fragment_recipe_detail"
+        tools:layout="@layout/fragment_recipe_detail" />
+</navigation>
